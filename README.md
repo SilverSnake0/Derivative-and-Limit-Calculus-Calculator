@@ -43,7 +43,7 @@ Please enter the function you would like to calculate the limit for: 5x^2
 Please enter the limit # you would like to calculate for the function '5x^2': 2
 Enter 'l' for left approach, 'r' for right approach, or 'none': l
 The limit of the function 5x^2 as x approaches 2 from the left is: 20
-limx->2(5x^2)
+limx->2-(5x^2)
 Solution copied to clipboard.
 Press enter to return to the main menu...
 ```

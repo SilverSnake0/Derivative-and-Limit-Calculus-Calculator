@@ -50,10 +50,10 @@ def lim(function, variable='x', value=0, direction=None, tolerance=1e-6):
         # Calculate the limit based on the provided direction
         if direction == 'left':
             limit_minus = limit(expr, x, value, dir='-')
-            solution = f'The limit of the function {function} as {variable} approaches {value} from the left is: {limit_minus}\nlim{variable}->{value}({function})'
+            solution = f'The limit of the function {function} as {variable} approaches {value} from the left is: {limit_minus}\nlim{variable}->{value}-({function})'
         elif direction == 'right':
             limit_plus = limit(expr, x, value, dir='+')
-            solution = f'The limit of the function {function} as {variable} approaches {value} from the right is: {limit_plus}\nlim{variable}->{value}({function})'
+            solution = f'The limit of the function {function} as {variable} approaches {value} from the right is: {limit_plus}\nlim{variable}->{value}+({function})'
         else:
             limit_value = limit(expr, x, value)
             solution = f'The limit of the function {function} as {variable} approaches {value} is: {limit_value}\nlim{variable}->{value}({function})'
