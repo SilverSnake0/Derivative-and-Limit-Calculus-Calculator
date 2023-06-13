@@ -1,6 +1,6 @@
 # Derivative and Limit Calculator
 
-##This Python script provides tools for performing fundamental calculus operations including calculating derivatives, limits, and plotting functions.
+## This Python script provides tools for performing fundamental calculus operations including calculating derivatives, limits, and plotting functions.
 
 Features:
 
@@ -50,6 +50,7 @@ Press enter to return to the main menu...
 
 An example of plotting a graph after inputting the function sin(1x):
 ![Sample Graph](sample_plot_graph.png)
+
 Dependencies:
 
 The script uses the following libraries:
@@ -65,5 +66,7 @@ This calculator uses Python's symbolic computation library (Sympy) which provide
 
 Note:
 When inputting 5x+x as an example, you must have a 1 before the x like 5x+1x. If you do not do this, you will encounter errors.
+
 When inputting 5x+2 as an example, do not input it as 5\*x+2, otherwise the input in the calculation would become 5\*\*x+2 which will create errors.
+
 For powers, you can do 5^2 or 5\*\*2, both are the same.
