@@ -9,9 +9,9 @@ def derivative(function, variable='x', n=1):
     # Parsing and transforming the input function to a format that sympy can interpret
     # Replacing specific characters to adapt to the sympy library requirements
     if function.startswith('x'):
-        expr = parse_expr('x' + function[1:].replace('^', '**').replace('x','*x').replace('√', 'sqrt').replace(variable, 'x'))
+        expr = parse_expr('x' + function[1:].replace('^', '**').replace('x','*x').replace('tan**(-1)', 'atan').replace('sin**(-1)', 'asin').replace('cos**(-1)', 'acos').replace('√', 'sqrt').replace(variable, 'x'))
     else:
-        expr = parse_expr(function.replace('^', '**').replace('x','*x').replace('√', 'sqrt').replace(variable, 'x'))
+        expr = parse_expr(function.replace('^', '**').replace('x','*x').replace('tan**(-1)', 'atan').replace('sin**(-1)', 'asin').replace('cos**(-1)', 'acos').replace('√', 'sqrt').replace(variable, 'x'))
     derivative = diff(expr, x, n) # Derivative calculation
     solution = f"The #{n} derivative of the function {function} with respect to {variable} is:\n{derivative}" # Format the output string
     pyperclip.copy(solution) # Copy the solution automatically to computer clipboard so user can conveniently paste it
